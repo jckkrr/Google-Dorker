@@ -42,13 +42,15 @@ def matrix_maker(df, x_col, y_col, sum_col):
 st.markdown("**Open Investigation Tools** | [constituent.online](%s)" % 'http://www.constituent.online')
     
 st.title('Matrix Maker')
-st.write('Convert a long dataframe into a matrix.')
+st.write('Convert a long dataframe into a matrix. Like that.')
 
 
 ### 
 
 
 uploaded_file = st.file_uploader("Upload file here &#x2935;", type={"csv"})
+st.markdown('<p class="small-font">Download a test file <a href="https://raw.githubusercontent.com/jckkrr/Matrix-Maker/refs/heads/main/wcpfc%20-%20ALL.csv">here</a>.</p>', unsafe_allow_html=True)
+
 if uploaded_file:
     
     #file_name = uploaded_file.name
@@ -73,4 +75,5 @@ if uploaded_file:
     st.dataframe(df_matrix, width = 800)
     
     st.markdown('<p class="small-font">Note: if there is more than 1 value returned, the sum total of those values is what will be returned</p>', unsafe_allow_html=True)
-    st.markdown("""<style>.small-font {font-size:10px !important; padding: 0; margin: 0; line-height: 6px;}</style>""", unsafe_allow_html=True)
+    
+st.markdown("""<style>.small-font {font-size:10px !important; padding: 0; margin: 0; line-height: 6px;}</style>""", unsafe_allow_html=True)
