@@ -1,2 +1,2 @@
-# Google-Dorker
-An easy to use form to improve your internet searches.
+# Matrix Maker
+Convert a long dataframe into a matrix.
